@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yandriie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2017/11/06 17:03:25 by yandriie          #+#    #+#             */
-/*   Updated: 2017/11/15 14:51:24 by yandriie         ###   ########.fr       */
+/*   Created: 2017/10/25 14:15:32 by yandriie          #+#    #+#             */
+/*   Updated: 2017/12/20 14:48:09 by yandriie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "stdlib.h"
 
-void	ft_lstadd(t_list **alst, t_list *new)
+size_t		ft_strlen(const char *s)
 {
-	if (alst == NULL || new == NULL)
-		return ;
+	size_t	length;
 
-	new->next = *alst;
-	*alst = new;
-	return ;
+	length = 0;
+	while (s[length] != '\0')
+		length++;
+	return (length);
 }

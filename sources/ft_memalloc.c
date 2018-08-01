@@ -6,7 +6,7 @@
 /*   By: yandriie <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/31 14:30:16 by yandriie          #+#    #+#             */
-/*   Updated: 2017/11/14 12:22:39 by yandriie         ###   ########.fr       */
+/*   Updated: 2017/12/11 12:54:01 by yandriie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,5 +23,5 @@ void	*ft_memalloc(size_t size)
 	i = 0;
 	while (i < size)
 		ptr[i++] = 0;
-	return (ptr);
+	return ((void *)ptr);
 }
