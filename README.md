@@ -1,2 +1,2 @@
 # 42_libft
-For the info the the libft.pdf
+For the info see the libft.pdf
